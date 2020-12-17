@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/green_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="#0FA231"/>
+
+        <ImageButton
+            android:id="@+id/blue_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/green_button"
+            android:background="#9DE5FF"/>
+
+        <ImageButton
+            android:id="@+id/orange_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/blue_button"
+            android:background="#FF8900"/>
+
+        <ImageButton
+            android:id="@+id/red_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/orange_button"
+            android:background="#FF0303"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/forms_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        tools:listitem="@layout/forms_rv_item"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

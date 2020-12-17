@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/new_site_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Site"
+        android:textSize="14sp"
+        android:background="@android:color/transparent"
+        android:textColor="#FF8900"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="false"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/day_recycler_view"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/day_rv_item"
+        android:layout_below="@id/new_site_btn"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
