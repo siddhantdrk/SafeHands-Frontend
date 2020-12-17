@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/items_border"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/staffCheck"
+        android:layout_width="wrap_content"
+        android:text="Staff Name"
+        android:textSize="20sp"
+        android:layout_marginStart="16dp"
+        android:textColor="#707070"
+        android:padding="16dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
